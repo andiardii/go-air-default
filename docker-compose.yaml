@@ -1,0 +1,10 @@
+version: "3"
+services:
+  container-app:
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    volumes:
+      - ./src:/app/src
+    ports:
+    - 8080:8080
